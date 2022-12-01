@@ -12,14 +12,17 @@ export class CadastroPage implements OnInit {
   constructor(private formBuilder: FormBuilder) {
     this.formCadastro = this.formBuilder.group({
       name:['', Validators.compose([Validators.required, Validators.minLength(3)])],
-      cpf:[],
-      email:[],
-      senha:[],
-      confirmsenha:[]
+      cpf:['', Validators.compose([Validators.required])],
+      email:['', Validators.compose([Validators.required, Validators.email])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])],
+      confirmPassword: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])]
     });
    }
 
-  ngOnInit() {
-  }
 
+  ngOnInit(): void {
+  }
+  salvarCadastro(){
+    console.log('Forms: ', this.formCadastro.valid);
+  }
 }
