@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button name="back">
+      </ion-button>
+    </ion-buttons>
     <ion-title>Sign up</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
   <ion-card>
     <ion-item>
       <ion-label>
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </ion-label>
-      <ion-input placeholder="First name"></ion-input>
+      <ion-input placeholder="Name"></ion-input>
     </ion-item>
   </ion-card>
   <ion-card>
@@ -19,7 +22,7 @@
       <ion-label>
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </ion-label>
-      <ion-input placeholder="Last name"></ion-input>
+      <ion-input placeholder="CPF"></ion-input>
     </ion-item>
   </ion-card>
   <ion-card>
@@ -31,8 +34,8 @@
     </ion-item>
   </ion-card>
   <ion-card>
-    <ion-item >
-      <ion-label >
+    <ion-item>
+      <ion-label>
         <ion-icon name="lock-closed-outline"></ion-icon>
       </ion-label>
       <ion-input placeholder="Password"></ion-input>
@@ -43,8 +46,10 @@
   <p class="center">now,</p>
   <p class="center">you're ready to sign in!</p>
   <div>
-    <ion-button routerLink="/home" class="centerB" size="default">Login</ion-button>
+    <ion-button routerLink="/home" class="centerB" size="default"
+      >Login</ion-button
+    >
   </div>
 
-
+  <form></form>
 </ion-content>

@@ -10,10 +10,15 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+  // {
+  //   path: 'sign-up',
+  //   loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
+  // },
   {
-    path: 'sign-up',
-    loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   }
+
 ];
 @NgModule({
   imports: [
