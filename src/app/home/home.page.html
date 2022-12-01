@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Email ID"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Password"></ion-input>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-item lines="none" class="rememberMe">
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-label>Remember me</ion-label>
+    <ion-button class="forgot_password" (click)="presentAlert()">Forgot password?</ion-button>
+
+  </ion-item>
+
+
+  <ion-button expand="block" class="login">Sign in</ion-button>
+
+  <p class="center">or</p>
+  <p class="center">create an account</p>
+  <div>
+    <ion-button routerLink="/sign-up" class="centerB" size="default">Sign up</ion-button>
+  </div>
+
+</ion-content>

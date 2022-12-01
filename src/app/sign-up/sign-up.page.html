@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sign up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="First name"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Last name"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Email"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item >
+      <ion-label >
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Password"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-button expand="block" class="login">Sign up</ion-button>
+  <p class="center">now,</p>
+  <p class="center">you're ready to sign in!</p>
+  <div>
+    <ion-button routerLink="/home" class="centerB" size="default">Login</ion-button>
+  </div>
+
+
+</ion-content>

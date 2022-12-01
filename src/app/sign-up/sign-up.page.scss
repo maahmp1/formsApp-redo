@@ -1,0 +1,43 @@
+ion-toolbar {
+  --background: #001D6E;
+
+  ion-title {
+      --color: white;
+      font-weight: bold;
+  }
+}
+
+ion-content {
+  --background: #C4DDFF;
+
+
+  ion-item {
+      ion-icon {
+          --background: #0B409C;
+      }
+
+      --background:#2B4865;
+  }
+
+  .login {
+      --background: #1369c0;
+      font-size: large;
+  }
+
+  .centerB {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      --background: #10316B;
+      font-size: large;
+
+  }
+
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2B4865;
+      font-size: large;
+  }
+}
